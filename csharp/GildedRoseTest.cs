@@ -24,66 +24,66 @@ namespace csharp
         }
 
         [Test]
-        public void foo()
+        public void TestGeneralItems()
         {
-            CombinationApprovals.VerifyAllCombinations(TestFoo, names, sellIns, qualities);
+            CombinationApprovals.VerifyAllCombinations(HandleFoo, names, sellIns, qualities);
         }
 
         [Test]
-        public void brie()
+        public void TestAgedBrie()
         {
-            CombinationApprovals.VerifyAllCombinations(TestBrie, sellIns, qualities);
+            CombinationApprovals.VerifyAllCombinations(HandleAgedBrie, sellIns, qualities);
         }
 
         [Test]
-        public void backstage()
+        public void TestBackstagePasses()
         {
-            CombinationApprovals.VerifyAllCombinations(TestBackstage, sellIns, qualities);
+            CombinationApprovals.VerifyAllCombinations(HandleBackstagePasses, sellIns, qualities);
         }
 
         [Test]
-        public void conjured()
+        public void TestConjuredItems()
         {
-            CombinationApprovals.VerifyAllCombinations(TestConjured, names, sellIns, qualities);
+            CombinationApprovals.VerifyAllCombinations(HandleConjured, names, sellIns, qualities);
         }
 
         [Test]
-        public void sulfuras()
+        public void TestSulfuras()
         {
-            CombinationApprovals.VerifyAllCombinations(TestSulfuras, sellIns);
+            CombinationApprovals.VerifyAllCombinations(HandleSulfuras, sellIns);
         }
 
-        private string TestFoo(string name, int sellIn, int quality)
+        private string HandleFoo(string name, int sellIn, int quality)
         {
             IList<Item> Items = new List<Item> { new GeneralItem(name, sellIn, quality) };
-            return TestIt(Items);
+            return UpdateTheQuality(Items);
         }
 
-        private string TestBrie(int sellIn, int quality)
+        private string HandleAgedBrie(int sellIn, int quality)
         {
             IList<Item> Items = new List<Item> { new AgedBrie(sellIn, quality) };
-            return TestIt(Items);
+            return UpdateTheQuality(Items);
         }
 
-        private string TestBackstage(int sellIn, int quality)
+        private string HandleBackstagePasses(int sellIn, int quality)
         {
             IList<Item> Items = new List<Item> { new BackstagePass(sellIn, quality) };
-            return TestIt(Items);
+            return UpdateTheQuality(Items);
         }
 
-        private string TestConjured(string name, int sellIn, int quality)
+        private string HandleConjured(string name, int sellIn, int quality)
         {
             IList<Item> Items = new List<Item> { new Conjured(name, sellIn, quality) };
-            return TestIt(Items);
+            return UpdateTheQuality(Items);
         }
 
-        private string TestSulfuras(int sellIn)
+        private string HandleSulfuras(int sellIn)
         {
             IList<Item> Items = new List<Item> { new Sulfuras(sellIn) };
-            return TestIt(Items);
+            return UpdateTheQuality(Items);
         }
 
-        private static string TestIt(IList<Item> Items)
+        private static string UpdateTheQuality(IList<Item> Items)
         {
             GildedRose app = new GildedRose(Items);
             app.UpdateQuality();
