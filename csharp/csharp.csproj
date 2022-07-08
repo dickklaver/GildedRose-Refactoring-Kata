@@ -81,10 +81,6 @@
   <ItemGroup>
     <Content Include="ApprovalTest.ThirtyDays.approved.txt" />
     <Content Include="GildedRoseRequirements.txt" />
-    <Content Include="GildedRoseTest.backstage.approved.txt" />
-    <Content Include="GildedRoseTest.brie.approved.txt" />
-    <Content Include="GildedRoseTest.conjured.approved.txt" />
-    <Content Include="GildedRoseTest.foo.approved.txt" />
     <Content Include="GildedRoseTest.sulfuras.approved.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -12,7 +12,7 @@ using System.Linq;
 namespace csharp
 {
     [TestFixture]
-    [UseReporter(typeof(DiffReporter))]
+    [UseReporter(typeof(WinMergeReporter))]
     public class GildedRoseTest
     {
         private IEnumerable<string> names;
@@ -23,8 +23,9 @@ namespace csharp
         {
             names = new[] { "foo", "bar", "baz" };
             sellIns = Enumerable.Range(-2, 15);
-            qualities = Enumerable.Range(-2, 15);
+            qualities = Enumerable.Range(-2, 60);
         }
+
         [Test]
         public void foo()
         {

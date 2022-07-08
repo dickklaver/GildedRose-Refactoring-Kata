@@ -19,7 +19,6 @@ namespace csharp
                 new BackstagePass(15, 20),
                 new BackstagePass(10, 49),
                 new BackstagePass(5, 49),
-				// this conjured item does not work properly yet
                 new Conjured("Mana Cake", 3, 6),
                 new Conjured("Mana Cake", 3, 7),
                 new Conjured("Other Cake", 3, 13),
