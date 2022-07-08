@@ -13,8 +13,7 @@ namespace csharp
 
         public void UpdateQuality()
         {
-            var baseItems = Items.Cast<BaseItem>();
-            foreach (var item in baseItems)
+            foreach (var item in Items.Cast<BaseItem>())
             {
                 item.UpdateQuality();
             }
