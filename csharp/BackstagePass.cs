@@ -17,7 +17,7 @@ namespace csharp
         public override void UpdateQuality()
         {
             AdjustQualityBy(1);
-            AdjustQualityIfPastFistThreshold();
+            AdjustQualityIfPastFirstThreshold();
             AdjustQualityIfPastSecondThreshold();
             HandleSellIn();
         }
@@ -30,7 +30,7 @@ namespace csharp
             }
         }
 
-        private void AdjustQualityIfPastFistThreshold()
+        private void AdjustQualityIfPastFirstThreshold()
         {
             if (this.SellIn < FIRST_THRESHOLD)
             {
