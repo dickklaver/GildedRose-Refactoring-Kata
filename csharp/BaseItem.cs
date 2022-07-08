@@ -11,13 +11,7 @@ namespace csharp
         {
         }
 
-        public bool IsExpired
-        {
-            get
-            {
-                return this.SellIn < 0;
-            }
-        }
+        public bool IsExpired => this.SellIn < 0;
 
         public abstract void UpdateQuality();
 
