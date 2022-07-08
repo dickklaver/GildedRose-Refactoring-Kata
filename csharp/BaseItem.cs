@@ -24,14 +24,23 @@ namespace csharp
         protected void AdjustQualityBy(int increment)
         {
             this.Quality += increment;
-            if (this.Quality < MINIMUM_QUALITY)
-            {
-                this.Quality = MINIMUM_QUALITY;
-            }
+            HandleIfBelowMinimumQuality();
+            HandleIfOverMaximumQuality();
+        }
 
+        private void HandleIfOverMaximumQuality()
+        {
             if (this.Quality > MAXIMUM_QUALITY)
             {
                 this.Quality = MAXIMUM_QUALITY;
+            }
+        }
+
+        private void HandleIfBelowMinimumQuality()
+        {
+            if (this.Quality < MINIMUM_QUALITY)
+            {
+                this.Quality = MINIMUM_QUALITY;
             }
         }
 
