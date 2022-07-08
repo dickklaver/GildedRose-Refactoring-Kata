@@ -81,7 +81,11 @@
   <ItemGroup>
     <Content Include="ApprovalTest.ThirtyDays.approved.txt" />
     <Content Include="GildedRoseRequirements.txt" />
-    <Content Include="GildedRoseTest.sulfuras.approved.txt" />
+    <Content Include="GildedRoseTest.TestAgedBrie.approved.txt" />
+    <Content Include="GildedRoseTest.TestBackstagePasses.approved.txt" />
+    <Content Include="GildedRoseTest.TestConjuredItems.approved.txt" />
+    <Content Include="GildedRoseTest.TestGeneralItems.approved.txt" />
+    <Content Include="GildedRoseTest.TestSulfuras.approved.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
