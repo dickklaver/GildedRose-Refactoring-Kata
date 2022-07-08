@@ -1,8 +1,5 @@
-﻿using ApprovalTests;
-using ApprovalTests.Combinations;
+﻿using ApprovalTests.Combinations;
 using ApprovalTests.Reporters;
-
-//using ApprovalUtilities;
 
 using NUnit.Framework;
 
