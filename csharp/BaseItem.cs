@@ -4,6 +4,9 @@ namespace csharp
 {
     public abstract class BaseItem : Item
     {
+        public const int MINIMUM_QUALITY = 0;
+        public const int MAXIMUM_QUALITY = 50;
+
         public BaseItem() : base()
         {
         }
@@ -21,14 +24,14 @@ namespace csharp
         protected void AdjustQualityBy(int increment)
         {
             this.Quality += increment;
-            if (this.Quality < 0)
+            if (this.Quality < MINIMUM_QUALITY)
             {
-                this.Quality = 0;
+                this.Quality = MINIMUM_QUALITY;
             }
 
-            if (this.Quality > 50)
+            if (this.Quality > MAXIMUM_QUALITY)
             {
-                this.Quality = 50;
+                this.Quality = MAXIMUM_QUALITY;
             }
         }
 
