@@ -2,7 +2,7 @@
 using ApprovalTests.Combinations;
 using ApprovalTests.Reporters;
 
-using ApprovalUtilities;
+//using ApprovalUtilities;
 
 using NUnit.Framework;
 

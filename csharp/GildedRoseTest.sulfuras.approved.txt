@@ -1,0 +1,15 @@
+﻿[-2] => Sulfuras, Hand of Ragnaros, -2, 80
+[-1] => Sulfuras, Hand of Ragnaros, -1, 80
+[0] => Sulfuras, Hand of Ragnaros, 0, 80
+[1] => Sulfuras, Hand of Ragnaros, 1, 80
+[2] => Sulfuras, Hand of Ragnaros, 2, 80
+[3] => Sulfuras, Hand of Ragnaros, 3, 80
+[4] => Sulfuras, Hand of Ragnaros, 4, 80
+[5] => Sulfuras, Hand of Ragnaros, 5, 80
+[6] => Sulfuras, Hand of Ragnaros, 6, 80
+[7] => Sulfuras, Hand of Ragnaros, 7, 80
+[8] => Sulfuras, Hand of Ragnaros, 8, 80
+[9] => Sulfuras, Hand of Ragnaros, 9, 80
+[10] => Sulfuras, Hand of Ragnaros, 10, 80
+[11] => Sulfuras, Hand of Ragnaros, 11, 80
+[12] => Sulfuras, Hand of Ragnaros, 12, 80
